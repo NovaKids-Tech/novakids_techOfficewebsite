@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Creative v7.0.2 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v5.0.1 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10938,6 +10928,7 @@ hr.divider-light {
 }
 
 header.masthead {
+  position:relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(47, 78, 241, 0.8) 0%, rgba(151, 71, 255, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
@@ -11007,11 +10998,13 @@ header.masthead h1, header.masthead .h1 {
 }
 #balloon-container {
   position: absolute;
-  width: 99%;
-  height: 100%;
+  width: 100%;  /* Genişlik eklendi */
+  height: 100%; /* Yükseklik eklendi */
   overflow: hidden;
   pointer-events: none;
   z-index: 10;
+  top: 0;       /* Pozisyon eklendi */
+  left: 0;      /* Pozisyon eklendi */
 }
 
 .balloon {
@@ -11024,6 +11017,7 @@ header.masthead h1, header.masthead .h1 {
   cursor: pointer;
   pointer-events: auto;
   transition: transform 0.2s ease;
+  z-index:999;
 }
 
 .balloon:hover {

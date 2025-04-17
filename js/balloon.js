@@ -51,7 +51,7 @@ function createNewBalloon() {
 // Başlangıçta 4 balon oluştur
 function initBalloons() {
     for (let i = 0; i < 4; i++) {
-        setTimeout(() => createNewBalloon(), i * 1500);
+        setTimeout(() => createNewBalloon(), i * 3500);
     }
 }
 
