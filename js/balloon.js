@@ -29,14 +29,38 @@ class Balloon {
     }
 
     pop() {
-        this.element.classList.add('pop-effect');
-        // Pop sesi ekleyebilirsiniz
-        const audio = new Audio('path/to/pop-sound.mp3');
-        audio.play();
+        console.log("Balon patlatıldı!"); // Debug için log ekleyin
         
+        this.element.classList.add('pop-effect');
+        
+        // Ses dosyası yolunu düzeltin ve hata yakalama ekleyin
+        try {
+            const audio = new Audio('../assets/sounds/pop-sound.mp3');
+            audio.volume = 0.5; // Ses seviyesini ayarlayın
+            
+            // Modern tarayıcılarda ses çalma promise döndürür, hataları yakalayın
+            const playPromise = audio.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.warn("Ses çalma hatası:", error);
+                    // Otomatik oynatma politikası hatası olabilir
+                });
+            }
+        } catch (error) {
+            console.error("Ses yükleme hatası:", error);
+            // Ses dosyası bulunamadı veya başka bir hata oluştu
+        }
+        
+        // Balon kaldırma işlemini garanti altına alın
         setTimeout(() => {
-            this.element.remove();
-            createNewBalloon();
+            if (this.element && this.element.parentNode) {
+                this.element.remove();
+                createNewBalloon();
+            } else {
+                console.warn("Balon elementi zaten kaldırılmış.");
+                createNewBalloon();
+            }
         }, 300);
     }
 }
@@ -51,7 +75,7 @@ function createNewBalloon() {
 // Başlangıçta 4 balon oluştur
 function initBalloons() {
     for (let i = 0; i < 4; i++) {
-        setTimeout(() => createNewBalloon(), i * 1500);
+        setTimeout(() => createNewBalloon(), i * 3500);
     }
 }
 
