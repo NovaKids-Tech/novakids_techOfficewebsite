@@ -48,4 +48,8 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 01a506f10d0cbdaa0fa38b32c63c1be4c4d3a62f

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NovaKids Tech - AR Matematik Oyunu Web Sitesi
 
 Bu repo, NovaKids Tech şirketinin AR (Artırılmış Gerçeklik) tabanlı matematik eğitim oyununu tanıtan web sitesinin kaynak kodlarını içermektedir.
@@ -30,3 +31,6 @@ NovaKids Tech, çocukların matematik öğrenimini eğlenceli hale getirmek içi
 1. Repoyu klonlayın:
 ```bash
 git clone https://github.com/novakids-tech/website.git
+=======
+"# OfficeWebSite" 
+>>>>>>> 01a506f10d0cbdaa0fa38b32c63c1be4c4d3a62f
