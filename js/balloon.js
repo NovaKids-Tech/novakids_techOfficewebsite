@@ -29,7 +29,6 @@ class Balloon {
     }
 
     pop() {
-<<<<<<< HEAD
         console.log("Balon patlatıldı!"); // Debug için log ekleyin
         
         this.element.classList.add('pop-effect');
@@ -62,16 +61,6 @@ class Balloon {
                 console.warn("Balon elementi zaten kaldırılmış.");
                 createNewBalloon();
             }
-=======
-        this.element.classList.add('pop-effect');
-        // Pop sesi ekleyebilirsiniz
-        const audio = new Audio('path/to/pop-sound.mp3');
-        audio.play();
-        
-        setTimeout(() => {
-            this.element.remove();
-            createNewBalloon();
->>>>>>> fca1085 (first commit)
         }, 300);
     }
 }
@@ -86,11 +75,7 @@ function createNewBalloon() {
 // Başlangıçta 4 balon oluştur
 function initBalloons() {
     for (let i = 0; i < 4; i++) {
-<<<<<<< HEAD
         setTimeout(() => createNewBalloon(), i * 3500);
-=======
-        setTimeout(() => createNewBalloon(), i * 1500);
->>>>>>> fca1085 (first commit)
     }
 }
 
