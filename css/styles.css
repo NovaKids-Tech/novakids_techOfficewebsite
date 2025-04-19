@@ -10928,14 +10928,7 @@ hr.divider-light {
 }
 
 header.masthead {
-<<<<<<< HEAD
-<<<<<<< HEAD
   position:relative;
-=======
->>>>>>> fca1085 (first commit)
-=======
-  position:relative;
->>>>>>> 01a506f10d0cbdaa0fa38b32c63c1be4c4d3a62f
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(47, 78, 241, 0.8) 0%, rgba(151, 71, 255, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
@@ -11005,10 +10998,7 @@ header.masthead h1, header.masthead .h1 {
 }
 #balloon-container {
   position: absolute;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 01a506f10d0cbdaa0fa38b32c63c1be4c4d3a62f
+
   width: 100%;  /* Genişlik eklendi */
   height: 100%; /* Yükseklik eklendi */
   overflow: hidden;
@@ -11016,15 +11006,6 @@ header.masthead h1, header.masthead .h1 {
   z-index: 10;
   top: 0;       /* Pozisyon eklendi */
   left: 0;      /* Pozisyon eklendi */
-<<<<<<< HEAD
-=======
-
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 10;
->>>>>>> fca1085 (first commit)
-=======
->>>>>>> 01a506f10d0cbdaa0fa38b32c63c1be4c4d3a62f
 }
 
 .balloon {
@@ -11037,14 +11018,7 @@ header.masthead h1, header.masthead .h1 {
   cursor: pointer;
   pointer-events: auto;
   transition: transform 0.2s ease;
-<<<<<<< HEAD
-<<<<<<< HEAD
   z-index:999;
-=======
->>>>>>> fca1085 (first commit)
-=======
-  z-index:999;
->>>>>>> 01a506f10d0cbdaa0fa38b32c63c1be4c4d3a62f
 }
 
 .balloon:hover {
@@ -11052,20 +11026,9 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .pop-effect {
-<<<<<<< HEAD
-<<<<<<< HEAD
   animation: pop 0.3s ease-out forwards; /* 'forwards' ekleyin */
   opacity: 0;
-  pointer-events: none; /* Patlama sırasında tıklamayı devre dışı bırakın */
-=======
-  animation: pop 0.3s ease-out;
-  opacity: 0;
->>>>>>> fca1085 (first commit)
-=======
-  animation: pop 0.3s ease-out forwards; /* 'forwards' ekleyin */
-  opacity: 0;
-  pointer-events: none; /* Patlama sırasında tıklamayı devre dışı bırakın */
->>>>>>> 01a506f10d0cbdaa0fa38b32c63c1be4c4d3a62f
+  pointer-events: none; 
 }
 
 @keyframes pop {
